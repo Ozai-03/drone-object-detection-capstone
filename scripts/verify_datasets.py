@@ -8,12 +8,12 @@ directory structure, and print basic summary statistics (image and annotation co
 This script does not download data. It only checks what is already present on disk.
 
 Default expected locations:
-- VisDrone: data/raw/visdrone
-- UAVDT:    data/raw/uavdt
+- VisDrone: data/raw/visdrone_raw
+- UAVDT:    data/raw/uavdt_raw
 
 Usage:
   python scripts/verify_datasets.py
-  python scripts/verify_datasets.py --visdrone-dir data/raw/visdrone --uavdt-dir data/raw/uavdt
+  python scripts/verify_datasets.py --visdrone-dir data/raw/visdrone_raw --uavdt-dir data/raw/uavdt_raw
 """
 
 from __future__ import annotations
@@ -123,8 +123,8 @@ def print_report(report: DatasetReport) -> None:
 
 def main() -> int:
     parser = argparse.ArgumentParser(description="Verify local VisDrone and UAVDT datasets.")
-    parser.add_argument("--visdrone-dir", type=Path, default=Path("data/raw/visdrone"))
-    parser.add_argument("--uavdt-dir", type=Path, default=Path("data/raw/uavdt"))
+    parser.add_argument("--visdrone-dir", type=Path, default=Path("data/raw/visdrone_raw"))
+    parser.add_argument("--uavdt-dir", type=Path, default=Path("data/raw/uavdt_raw"))
     parser.add_argument(
         "--min-samples",
         type=int,

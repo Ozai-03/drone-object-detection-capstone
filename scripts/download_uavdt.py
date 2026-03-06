@@ -16,7 +16,7 @@ import requests
 from tqdm import tqdm
 
 ZENODO_API_URL = "https://zenodo.org/api/records/14575517"
-UAVDT_DIR = Path("data/raw/uavdt")
+UAVDT_DIR = Path("data/raw/uavdt_raw")
 
 
 def _is_populated(path: Path) -> bool:

@@ -14,7 +14,7 @@ from pathlib import Path
 
 import gdown
 
-VISDRONE_DIR = Path("data/raw/visdrone")
+VISDRONE_DIR = Path("data/raw/visdrone_raw")
 
 # Google Drive file IDs sourced from the official VisDrone GitHub README
 SPLITS = {
