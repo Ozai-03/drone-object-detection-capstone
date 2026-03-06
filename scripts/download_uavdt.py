@@ -20,7 +20,7 @@ UAVDT_DIR = Path("data/raw/uavdt_raw")
 
 
 def _is_populated(path: Path) -> bool:
-    return path.exists() and any(path.iterdir())
+    return path.exists() and any(p for p in path.iterdir() if p.suffix != ".zip")
 
 
 def _download_file(url: str, dest: Path) -> None:
