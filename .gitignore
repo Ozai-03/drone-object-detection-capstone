@@ -1,8 +1,29 @@
 venv/
 .env
 
-data/raw/
+# Raw dataset files — folder structure tracked, data files ignored
+data/raw/**/*.jpg
+data/raw/**/*.jpeg
+data/raw/**/*.png
+data/raw/**/*.bmp
+data/raw/**/*.tif
+data/raw/**/*.tiff
+data/raw/**/*.txt
+data/raw/**/*.zip
 
-data/processed/
+# Processed dataset files — folder structure tracked, data files ignored
+data/processed/**/*.jpg
+data/processed/**/*.jpeg
+data/processed/**/*.png
+data/processed/**/*.bmp
+data/processed/**/*.tif
+data/processed/**/*.tiff
+data/processed/**/*.txt
+data/processed/**/*.yaml
+data/processed/**/*.json
+data/processed/**/*.csv
 
 __pycache__/
+.cache/
+*.cache
+.DS_Store
