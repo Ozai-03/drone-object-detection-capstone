@@ -42,3 +42,4 @@ runs/
 # Reports — results dragged in manually, weights excluded
 reports/**/*.pt
 reports/**/*.pth
+reports/README.md
