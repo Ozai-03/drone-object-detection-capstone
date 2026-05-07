@@ -22,6 +22,7 @@ data/processed/**/*.txt
 data/processed/**/*.yaml
 data/processed/**/*.json
 data/processed/**/*.csv
+data/processed/**/*.yaml
 
 __pycache__/
 .cache/
