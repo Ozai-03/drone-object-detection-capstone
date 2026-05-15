@@ -43,3 +43,9 @@ runs/
 reports/**/*.pt
 reports/**/*.pth
 reports/README.md
+notebooks/bbox_scatter.png
+notebooks/class_distribution_raw.png
+notebooks/final_class_distribution.png
+notebooks/objects_per_image.png
+notebooks/occlusion_truncation.png
+notebooks/spatial_heatmap.png
